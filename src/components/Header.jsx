@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -25,30 +26,38 @@ const Header = () => {
               <a href="/Basket.aspx" className="basket">
                 <img src="/img/shopping-cart-48.png" alt="1" />
 
-                <span id="BasketCount" className="BasketCount"></span>
+                <span id="BasketCount" className="BasketCount">
+                  0
+                </span>
               </a>
-              <a
+
+              <NavLink to="/login" className="login-link">
+                ورود/ثبت نام
+              </NavLink>
+              {/* <a
                 href="/Sign.aspx"
                 className="login-link"
                 id="LoginButton"
                 runat="server"
-              >
-                ورود/ثبت نام
-              </a>
-              <a
+              ></a> */}
+
+              <NavLink to="/logOut" className="login-link">
+                خروج
+              </NavLink>
+              {/* <a
                 href="/EditProfile.aspx"
                 className="login-link"
                 id="EditProfileButton"
                 runat="server"
-              ></a>
-              <a
+              ></a> */}
+              {/* <a
                 href="/LogOut.aspx"
                 className="login-link"
                 id="LogOutButton"
                 runat="server"
               >
                 خروج
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

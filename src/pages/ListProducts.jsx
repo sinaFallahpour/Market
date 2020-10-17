@@ -39,13 +39,15 @@ const ListProducts = () => {
               </p>
             </a>
             <div className="price-holder">
+              <span class="item-off-price">190,000</span>
+
               <span className="item-price">
                 9,500
                 <span> تومان</span>
               </span>
             </div>
             <div className="add-basket" onclick="AddToBasket(4)">
-              <img src="Content/img/icons8-buy-48.png" alt="a;sal" />
+              <img src="/img/icons8-buy-48.png" alt="" />
             </div>
           </div>
         </section>
